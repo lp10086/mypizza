@@ -1,0 +1,9 @@
+  1.export与export default均可用于导出常量、函数、文件、模块等 （2）你可以在其它文件或模块中通过import+(常量 | 函数 | 文件 | 模块)名的方式，将其导入，以便能够对其进行使用
+ （3）在一个文件或模块中，export、import可以有多个，export default仅有一个 
+  2.这是在复用组件的时候用到的。假设我们写了一个单页面组件 A 文件，而在另一个文件 B 里面需要用到它，那么就要用 ES6 的 import/export 语法 ，在文件 A 中定义输出接口 export **，在文件 B 中引入 import **，然后再生成一个 Vue 实例 new Vue (**)，把引入的组件用起来，这样就可以复用组件 A 去配合文件 B 生成 html 页面了。
+  3.所以在复用组件的时候，export 和 new Vue 缺一不可。
+  export和import的定义：
+ES6模块主要有两个功能：export和import
+export用于对外输出本模块（一个文件可以理解为一个模块）变量的接口
+import用于在一个模块中加载另一个含有export接口的模块。
+也就是说使用export命令定义了模块的对外接口以后，其他JS文件就可以通过import命令加载这个模块（文件）。这几个都是ES6的语法。

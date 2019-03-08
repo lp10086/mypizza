@@ -8,7 +8,7 @@ import Admin from '@/components/Admin';
 import About from '@/components/About';
 import Login from '@/components/Login';
 import Register from '@/components/Register';
-
+import Bmap1 from '@/components/Bmap1';
 // 二级路由
 import Activity from '@/components/about/Activity';
 import Contact from '@/components/about/Contact';
@@ -33,6 +33,10 @@ export default new Router({
        'history':History,
        'delivery':Delivery
       }
+    },
+    {path:'/bmap',
+     name:'Bmap1',
+    component:Bmap1
     },
     {
       path: '/menu',

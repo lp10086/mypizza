@@ -7,10 +7,19 @@
     <!-- 引入网上的bootstrap.css 存放于index.html-->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" 
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+      /* 去除百度地图左下角的百度logo */
+    .anchorBL{
+      display: none
+    }
+    </style>
   </head>
+  <!-- 存放地图链接 后面的ak=0kQiZ1vkzCbNBCUNS7ifmjmYElNP2Cdb 为密钥-->
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=0kQiZ1vkzCbNBCUNS7ifmjmYElNP2Cdb"></script>
   <body>
     <div id="app"></div>
     
     <!-- built files will be auto injected(注入的)  把main.js给注入进去了-->
+  
   </body>
 </html>
